@@ -2,7 +2,7 @@
     "id": 10000,
     "uri": "https://osi.demo.com:443/api/booking/10000",
     "versionValue": 4,
-    "accessCode": "123456",
+    "accessCode": "10000",
     "accountingReference": null,
     "actualDurationHrs": null,
     "actualDurationMins": null,
@@ -11,16 +11,16 @@
         "id": 122999,
         "uri": "https://osi.demo.com:443/api/address/122999",
         "active": true,
-        "addrEntered": "3449 Terry Lane, Orlando, FL, 32810",
+        "addrEntered": "900 Spring Garden Ranch Rd, Orlando, FL, 32130",
         "costCenter": null,
         "costCenterName": null,
         "description": "Virtual Session (VRI)",
-        "displayLabel": "Virtual Session (VRI)\n3449 Terry Lane, Orlando, FL, 32810",
+        "displayLabel": "Virtual Session (VRI)\n900 Spring Garden Ranch Rd, Orlando, FL, 32130",
         "lat": 37.9602,
         "lng": -122.054,
         "uuid": "3e38811a-a806-474b-938e-79cd75db489c"
     },
-    "actualLocationDisplayLabel": "Virtual Session (VRI)\n500 Ellinwood Way, Pleasant Hill, CA  94523",
+    "actualLocationDisplayLabel": "Virtual Session (VRI)\n900 Spring Garden Ranch Rd, Orlando, FL, 32130",
     "actualStartDate": null,
     "assignedBy": null,
     "assignedByUsername": null,
@@ -42,24 +42,23 @@
             "name": "Contract",
             "nameKey": "contract"
         },
-        "displayName": "Default Medical Facility",
-        "name": "Default Medical Facility",
+        "displayName": "Demo.inc",
+        "name": "Demo.inc",
         "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
     },
     "billingLocation": {
         "id": 61054,
         "uri": "https://osi.demo.com:443/api/address/61054",
         "active": true,
-        "addrEntered": "3449 Terry Lane, \nOrlando, FL, 32810",
+        "addrEntered": "2425 Bisso Lane \nCONCORD, CA, 94520",
         "costCenter": null,
         "costCenterName": null,
         "description": null,
-        "displayLabel": "3449 Terry Lane, \nOrlando, FL, 32810",
+        "displayLabel": "2425 Bisso Lane  Suite 260\nCONCORD, CA, 94520",
         "lat": 37.9841,
         "lng": -122.047,
         "uuid": "fa24a5ed-ffdd-483b-a4eb-142b13061fa7"
     },
-    //I'm here so far
     "billingNotes": null,
     "bookingDate": "2024-04-01T21:58:25Z",
     "bookingDetails": null,
@@ -70,22 +69,22 @@
         "name": "Video (Scheduled)",
         "nameKey": "video"
     },
-    "bookingRequirements": "https://osi.demo.com:443/api/booking/1268162/bookingCriteria/",
+    "bookingRequirements": "https://osi.demo.com:443/api/booking/10000/bookingCriteria/",
     "bookingTime": "2024-04-01T21:58:25Z",
     "cancellationDate": null,
     "cancellationReason": null,
     "client": {
         "id": 2151,
         "uri": "https://osi.demo.com:443/api/client/2151",
-        "displayName": "Default Medical Facility",
-        "name": "Default Medical Facility",
+        "displayName": "Demo.inc",
+        "name": "Demo.inc",
         "uuid": "43746ebb-87da-443f-a01d-a3bc9c88d445"
     },
     "company": {
         "id": 3,
         "uri": "https://osi.demo.com:443/api/company/3",
-        "description": "A Demo Company",
-        "name": "Demo Company",
+        "description": "A Pacific Interpreters Company",
+        "name": "LanguageLine OnSite",
         "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
     },
     "companySpecialInstructions": "NV<br /><br /><span style=\"font-size: small; background-color: #00ff00;\"><strong>MAKE SURE AND CALL TO OFFER VIRTUAL AS WELL AS EMAILING</strong></span><br />",
@@ -117,16 +116,16 @@
             "name": "Contract",
             "nameKey": "contract"
         },
-        "displayName": "Default Medical Facility",
-        "name": "Default Medical Facility",
+        "displayName": "Demo.inc (501157)",
+        "name": "Demo.inc",
         "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
     },
     "customerBusinessUnit": {
         "id": 19,
         "uri": "https://osi.demo.com:443/api/businessUnit/19",
-        "description": "DEMO",
-        "name": "DEMO",
-        "nameKey": "DEMO"
+        "description": "LLS",
+        "name": "LLS",
+        "nameKey": "LLS"
     },
     "customerDurationOverrideHrs": null,
     "customerNotes": "<span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\"><span style=\"color: #000000; font-family: 'Times New Roman', serif; font-size: 16px; line-height: normal; background-color: #00ffff;\">You can remove \"Contra Costa approved\"&nbsp;filter if nobody is&nbsp;available and contact all the remaining&nbsp;interpreters on the roster.<br /><br /></span></span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; text-decoration: underline; background-color: #f5f5f5;\"><strong>Team, please put the minimum duration of 2 hours on all jobs and if you see duplicate notifiation share the info with the current caller and ask if they want to use same terp or if we should create new job.&nbsp;<br /><br />ACTION NEEDED: ATTENTION SCHEDULERS!!!&nbsp;</strong>&nbsp;</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\">&nbsp; Please note on all jobs that interpreters&nbsp;</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; text-decoration: underline; background-color: #f5f5f5;\"><strong>&nbsp;MUST</strong></span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\">&nbsp;print have signed &amp; upload the signed VOS into Interpreter Intelligence. This is</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; text-decoration: underline; background-color: #f5f5f5;\">REQUIRED</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\">&nbsp;in order for interpreters to get paid for jobs with Contra Costa. TB 1/23/15<br /><br /></span>",
@@ -188,7 +187,7 @@
         "name": "LLS",
         "nameKey": "LLS"
     },
-    "incidentals": "https://osi.demo.com:443/api/booking/1268162/incidental/",
+    "incidentals": "https://osi.demo.com:443/api/booking/10000/incidental/",
     "interpreter": null,
     "interpreterBusinessUnit": null,
     "interpreterNotes": "*OGS",
@@ -207,7 +206,7 @@
     "isSynchronizedManually": false,
     "isVerified": false,
     "jobCompleteEmailSent": false,
-    "jobOffers": "https://osi.demo.com:443/api/booking/1268162/jobOffer/",
+    "jobOffers": "https://osi.demo.com:443/api/booking/10000/jobOffer/",
     "language": {
         "id": 55,
         "uri": "https://osi.demo.com:443/api/language/55",
@@ -233,7 +232,7 @@
         "subtag": "gu"
     },
     "languageCode": "guj",
-    "lastModifiedBy": "Octavio.Guadamuz@languageline.com",
+    "lastModifiedBy": "admin@demo.com",
     "lastModifiedDate": "2024-04-01T22:01:30Z",
     "lastSynchronizedDate": null,
     "localBookingMode": null,
@@ -241,11 +240,11 @@
         "id": 122999,
         "uri": "https://osi.demo.com:443/api/address/122999",
         "active": true,
-        "addrEntered": "500 Ellinwood Way, Pleasant Hill, CA  94523",
+        "addrEntered": "900 Spring Garden Ranch Rd, Orlando, FL, 32130",
         "costCenter": null,
         "costCenterName": null,
         "description": "Virtual Session (VRI)",
-        "displayLabel": "Virtual Session (VRI)\n500 Ellinwood Way, Pleasant Hill, CA  94523",
+        "displayLabel": "Virtual Session (VRI)\n900 Spring Garden Ranch Rd, Orlando, FL, 32130",
         "lat": 37.9602,
         "lng": -122.054,
         "uuid": "3e38811a-a806-474b-938e-79cd75db489c"
@@ -337,8 +336,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -396,8 +395,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -459,8 +458,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -518,8 +517,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -577,8 +576,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -636,8 +635,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -695,8 +694,8 @@
                     "name": "Contract",
                     "nameKey": "contract"
                 },
-                "displayName": "Contra Costa Co Employment and Human Service (501157)",
-                "name": "Contra Costa Co Employment and Human Service",
+                "displayName": "Demo.inc (501157)",
+                "name": "Demo.inc",
                 "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
             },
             "dependent": null,
@@ -737,7 +736,7 @@
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": null,
-            "createdBy": "Octavio.Guadamuz@languageline.com",
+            "createdBy": "admin@demo.com",
             "createdDate": "2024-04-01T22:00:53Z",
             "criteria": {
                 "id": 87,
@@ -758,7 +757,7 @@
             },
             "dependent": null,
             "dependentId": null,
-            "lastModifiedBy": "Octavio.Guadamuz@languageline.com",
+            "lastModifiedBy": "admin@demo.com",
             "lastModifiedDate": "2024-04-01T22:00:53Z",
             "required": null,
             "superBooking": {
@@ -769,7 +768,7 @@
             "uuid": "a3f92045-3686-4079-8253-e188c1c7c019"
         }
     ],
-    "sessions": "https://osi.demo.com:443/api/booking/1268162/videoSession/",
+    "sessions": "https://osi.demo.com:443/api/booking/10000/videoSession/",
     "shiftEnabled": false,
     "signatureHash": null,
     "signatureHeight": null,
