@@ -8,19 +8,19 @@
     "actualDurationMins": null,
     "actualEndDate": null,
     "actualLocation": {
-        "id": 122999,
-        "uri": "https://osi.demo.com:443/api/address/122999",
+        "id": 10000,
+        "uri": "https://osi.demo.com:443/api/address/10000",
         "active": true,
-        "addrEntered": "900 Spring Garden Ranch Rd, Orlando, FL, 32130",
+        "addrEntered": "demo.address",
         "costCenter": null,
         "costCenterName": null,
         "description": "Virtual Session (VRI)",
-        "displayLabel": "Virtual Session (VRI)\n900 Spring Garden Ranch Rd, Orlando, FL, 32130",
-        "lat": 37.9602,
-        "lng": -122.054,
-        "uuid": "3e38811a-a806-474b-938e-79cd75db489c"
+        "displayLabel": "Virtual Session (VRI)\ndemo.address",
+        "lat": 47.9602,
+        "lng": -222.054,
+        "uuid": "3e49911a-a806-474b-938e-79cd75db489c"
     },
-    "actualLocationDisplayLabel": "Virtual Session (VRI)\n900 Spring Garden Ranch Rd, Orlando, FL, 32130",
+    "actualLocationDisplayLabel": "Virtual Session (VRI)\ndemo.address",
     "actualStartDate": null,
     "assignedBy": null,
     "assignedByUsername": null,
@@ -44,20 +44,20 @@
         },
         "displayName": "Demo.inc",
         "name": "Demo.inc",
-        "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
+        "uuid": "1458eab3-c55d-4871-ba91-156d5a69b1db"
     },
     "billingLocation": {
         "id": 61054,
         "uri": "https://osi.demo.com:443/api/address/61054",
         "active": true,
-        "addrEntered": "2425 Bisso Lane \nCONCORD, CA, 94520",
+        "addrEntered": "demo.address",
         "costCenter": null,
         "costCenterName": null,
         "description": null,
-        "displayLabel": "2425 Bisso Lane  Suite 260\nCONCORD, CA, 94520",
+        "displayLabel": "demo.address",
         "lat": 37.9841,
         "lng": -122.047,
-        "uuid": "fa24a5ed-ffdd-483b-a4eb-142b13061fa7"
+        "uuid": "sa24a5ed-ffdd-483b-a4eb-142b13061fa7"
     },
     "billingNotes": null,
     "bookingDate": "2024-04-01T21:58:25Z",
@@ -83,11 +83,11 @@
     "company": {
         "id": 3,
         "uri": "https://osi.demo.com:443/api/company/3",
-        "description": "A Pacific Interpreters Company",
-        "name": "LanguageLine OnSite",
+        "description": "Demo.inc",
+        "name": "Demo.inc",
         "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
     },
-    "companySpecialInstructions": "NV<br /><br /><span style=\"font-size: small; background-color: #00ff00;\"><strong>MAKE SURE AND CALL TO OFFER VIRTUAL AS WELL AS EMAILING</strong></span><br />",
+    "companySpecialInstructions": "null",
     "confirmationDate": null,
     "consumer": null,
     "consumerCount": null,
@@ -96,7 +96,7 @@
     "contactArrivalDate": null,
     "contactLateMins": null,
     "contactRatePlan": null,
-    "contactSpecialInstructions": "<p class=\"MsoNormal\" style=\"background: white;\"><span style=\"font-size: 10.0pt; font-family: 'helvetica neue'; color: red;\"><strong>1.</strong> A&nbsp;<span style=\"background: white;\">Verification of Service (VOS) form is required for this job.</span></span><span style=\"font-size: 10.0pt; font-family: 'helvetica neue'; color: #333333;\">&nbsp;</span><span style=\"font-size: 10.0pt; font-family: 'helvetica neue'; color: red;\">YOU MUST print the VOS form &amp; take it with you to be signed. </span><span style=\"font-size: 10.0pt; font-family: 'helvetica neue'; color: #333333;\">When closing the job upload the signed VOS form in our portal Interpreter Intelligence.&nbsp; You must close the job an</span><span style=\"font-size: 10.0pt; font-family: 'helvetica neue';\">d<span style=\"color: #333333;\"> submit VOS form within 24 hours of job completion. We are unable to bill the customer and pay you without the signed form. Please refer to our <em>Interpreter Intelligence Manual</em> for instructions of how to retrieve and upload this form. If you need help, contact us at <a href=\"mailto:assistance@fluentls.com\" target=\"_blank\">assistance@fluentls.com</a>.</span></span></p>\n<p class=\"MsoNormal\" style=\"background: white;\"><strong style=\"color: #ff0000; font-family: 'helvetica neue'; font-size: 13.3333px;\">2.&nbsp;</strong><span style=\"font-size: 10.0pt; font-family: 'helvetica neue'; color: red;\">You must remain onsite for the entire duration of your job, even if the consumer does not show up.</span></p><br />",
+    "contactSpecialInstructions": null,
     "createdBy": "admin@demo.com",
     "createdDate": "2024-04-01T22:00:53Z",
     "currencyCode": null,
@@ -116,19 +116,19 @@
             "name": "Contract",
             "nameKey": "contract"
         },
-        "displayName": "Demo.inc (501157)",
+        "displayName": "Demo.inc",
         "name": "Demo.inc",
-        "uuid": "1856eab3-c55d-4871-ba91-156d5a69b1db"
+        "uuid": "8484eab3-c55d-4871-ba91-156d5a69b1db"
     },
     "customerBusinessUnit": {
         "id": 19,
         "uri": "https://osi.demo.com:443/api/businessUnit/19",
-        "description": "LLS",
-        "name": "LLS",
-        "nameKey": "LLS"
+        "description": "DDM",
+        "name": "DDM",
+        "nameKey": "DDM"
     },
     "customerDurationOverrideHrs": null,
-    "customerNotes": "<span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\"><span style=\"color: #000000; font-family: 'Times New Roman', serif; font-size: 16px; line-height: normal; background-color: #00ffff;\">You can remove \"Contra Costa approved\"&nbsp;filter if nobody is&nbsp;available and contact all the remaining&nbsp;interpreters on the roster.<br /><br /></span></span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; text-decoration: underline; background-color: #f5f5f5;\"><strong>Team, please put the minimum duration of 2 hours on all jobs and if you see duplicate notifiation share the info with the current caller and ask if they want to use same terp or if we should create new job.&nbsp;<br /><br />ACTION NEEDED: ATTENTION SCHEDULERS!!!&nbsp;</strong>&nbsp;</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\">&nbsp; Please note on all jobs that interpreters&nbsp;</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; text-decoration: underline; background-color: #f5f5f5;\"><strong>&nbsp;MUST</strong></span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\">&nbsp;print have signed &amp; upload the signed VOS into Interpreter Intelligence. This is</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; text-decoration: underline; background-color: #f5f5f5;\">REQUIRED</span><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; background-color: #f5f5f5;\">&nbsp;in order for interpreters to get paid for jobs with Contra Costa. TB 1/23/15<br /><br /></span>",
+    "customerNotes": null,
     "customerRatePlan": null,
     "customerRatePlanAssociation": null,
     "customerRatePlanOverride": null,
@@ -139,18 +139,18 @@
         "uri": "https://osi.demo.com:443/api/language/55",
         "bpinOpiEnabled": null,
         "bpinVriEnabled": null,
-        "description": "Gujarati",
-        "displayName": "Gujarati",
-        "iso639_3Tag": "guj",
-        "mmisCode": "GU",
+        "description": "American Sign Language",
+        "displayName": "American Sign Language",
+        "iso639_3Tag": "ASL",
+        "mmisCode": "AL",
         "partnerConnectLanguage": {
             "id": 84,
             "uri": "https://osi.demo.com:443/api/partnerConnectLanguage/84",
             "versionValue": 0,
-            "bpinCode": "guj",
+            "bpinCode": "ASL",
             "bpinId": 72,
             "category": "Cat1",
-            "languageName": "Gujarati",
+            "languageName": "American Sign Language",
             "primaxisCode": null,
             "propioId": 40,
             "propioOpiEnabled": true,
@@ -183,9 +183,9 @@
     "generalCustomerBusinessUnit": {
         "id": 19,
         "uri": "https://osi.demo.com:443/api/businessUnit/19",
-        "description": "LLS",
-        "name": "LLS",
-        "nameKey": "LLS"
+        "description": "DEMO",
+        "name": "DEMO",
+        "nameKey": "DEMO"
     },
     "incidentals": "https://osi.demo.com:443/api/booking/10000/incidental/",
     "interpreter": null,
@@ -212,18 +212,18 @@
         "uri": "https://osi.demo.com:443/api/language/55",
         "bpinOpiEnabled": null,
         "bpinVriEnabled": null,
-        "description": "Gujarati",
-        "displayName": "Gujarati",
-        "iso639_3Tag": "guj",
-        "mmisCode": "GU",
+        "description": "American Sign Language",
+        "displayName": "American Sign Language",
+        "iso639_3Tag": "ASL",
+        "mmisCode": "ASL",
         "partnerConnectLanguage": {
             "id": 84,
             "uri": "https://osi.demo.com:443/api/partnerConnectLanguage/84",
             "versionValue": 0,
-            "bpinCode": "guj",
+            "bpinCode": "ASL",
             "bpinId": 72,
             "category": "Cat1",
-            "languageName": "Gujarati",
+            "languageName": "American Sign Language",
             "primaxisCode": null,
             "propioId": 40,
             "propioOpiEnabled": true,
@@ -231,20 +231,20 @@
         },
         "subtag": "gu"
     },
-    "languageCode": "guj",
+    "languageCode": "ASL",
     "lastModifiedBy": "admin@demo.com",
     "lastModifiedDate": "2024-04-01T22:01:30Z",
     "lastSynchronizedDate": null,
     "localBookingMode": null,
     "location": {
-        "id": 122999,
-        "uri": "https://osi.demo.com:443/api/address/122999",
+        "id": 10000,
+        "uri": "https://osi.demo.com:443/api/address/10000",
         "active": true,
-        "addrEntered": "900 Spring Garden Ranch Rd, Orlando, FL, 32130",
+        "addrEntered": "demo.address",
         "costCenter": null,
         "costCenterName": null,
         "description": "Virtual Session (VRI)",
-        "displayLabel": "Virtual Session (VRI)\n900 Spring Garden Ranch Rd, Orlando, FL, 32130",
+        "displayLabel": "Virtual Session (VRI)\ndemo.address",
         "lat": 37.9602,
         "lng": -122.054,
         "uuid": "3e38811a-a806-474b-938e-79cd75db489c"
@@ -258,9 +258,9 @@
     "numJobs": 1,
     "numberAcceptedOffers": 0,
     "numberForTelephoneTranslation": "Awaiting interpreter assignment.",
-    "offerDate": "2024-04-01T22:01:25Z",
+    "offerDate": "DATE",
     "offerMode": "manual",
-    "openDate": "2024-04-01T22:00:53Z",
+    "openDate": "DATE",
     "originOfRequest": "admin",
     "overflowJobLocationUuid": null,
     "overflowType": {
@@ -289,7 +289,7 @@
         "description": null,
         "name": "Consumer Names",
         "promote": false,
-        "ref": "Vijay Patel"
+        "ref": "Consumer.name"
     },
     "ratePlanOverride": null,
     "rateZoneOverride": null,
@@ -303,8 +303,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Demo.inc",
+                "name": "Demo.inc",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -344,8 +344,8 @@
             "dependentId": null,
             "description": null,
             "name": "Consumer Names",
-            "ref": "Vijay Patel",
-            "referenceValue": "Vijay Patel",
+            "ref": "Consumer.name",
+            "referenceValue": "Consumer.name",
             "referenceValueUrl": null,
             "superBooking": {
                 "id": 1107524,
@@ -362,8 +362,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -403,8 +403,8 @@
             "dependentId": null,
             "description": null,
             "name": "Appointment Details",
-            "ref": "Supervised visit",
-            "referenceValue": "Supervised visit",
+            "ref": "follow up results",
+            "referenceValue": "follow up results",
             "referenceValueUrl": null,
             "superBooking": {
                 "id": 1107524,
@@ -425,8 +425,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -466,8 +466,8 @@
             "dependentId": null,
             "description": null,
             "name": "Appointment Type",
-            "ref": "Other",
-            "referenceValue": "Other",
+            "ref": "Medical",
+            "referenceValue": "Medical",
             "referenceValueUrl": null,
             "superBooking": {
                 "id": 1107524,
@@ -484,8 +484,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -543,8 +543,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -602,8 +602,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -661,8 +661,8 @@
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": {
@@ -702,8 +702,8 @@
             "dependentId": null,
             "description": null,
             "name": "3rd Party Video Link",
-            "ref": "LLS to provide ",
-            "referenceValue": "LLS to provide ",
+            "ref": "DEMO to provide ",
+            "referenceValue": "DEMO to provide ",
             "referenceValueUrl": null,
             "superBooking": {
                 "id": 1107524,
@@ -715,7 +715,7 @@
     "reminderEmailSentScheduledPhone": null,
     "requestedBy": null,
     "requestor": {
-        "id": 58237,
+        "id": 10000,
         "uri": "https://osi.demo.com:443/api/requestor/58237",
         "displayLabel": "Vronika Corbin (925-655-4175)",
         "displayName": "Vronika Corbin (925-655-4175)",
@@ -724,15 +724,15 @@
     },
     "requirements": [
         {
-            "id": 1413161,
+            "id": 10000,
             "uri": "https://osi.demo.com:443/api/bookingCriteria/1413161",
             "versionValue": 0,
             "booking": null,
             "company": {
                 "id": 3,
                 "uri": "https://osi.demo.com:443/api/company/3",
-                "description": "A Pacific Interpreters Company",
-                "name": "LanguageLine OnSite",
+                "description": "Your Company Name",
+                "name": "Your Company Name",
                 "uuid": "f1d7a5f5-7861-44eb-a6fc-c6c64acbe365"
             },
             "config": null,
@@ -761,8 +761,8 @@
             "lastModifiedDate": "2024-04-01T22:00:53Z",
             "required": null,
             "superBooking": {
-                "id": 1107524,
-                "uri": "https://osi.demo.com:443/api/superBooking/1107524",
+                "id": 10000,
+                "uri": "https://osi.demo.com:443/api/superBooking/10000",
                 "uuid": "a4df6d72-dec8-4602-bd2c-11e99e64272b"
             },
             "uuid": "a3f92045-3686-4079-8253-e188c1c7c019"
@@ -788,11 +788,11 @@
     },
     "subLocation": null,
     "superBooking": {
-        "id": 1107524,
+        "id": 10000,
         "uri": "https://osi.demo.com:443/api/superBooking/1107524",
         "uuid": "a4df6d72-dec8-4602-bd2c-11e99e64272b"
     },
-    "teamId": 1458534,
+    "teamId": 10000,
     "teamSize": 1,
     "timeInterpreterArrivedInbound": null,
     "timeInterpreterArrivedOutbound": null,
@@ -810,8 +810,8 @@
     "valid": true,
     "verifiedDate": null,
     "visit": {
-        "id": 1458534,
-        "uri": "https://osi.demo.com:443/api/visit/1458534",
+        "id": 10000,
+        "uri": "https://osi.demo.com:443/api/visit/10000",
         "contactRatePlan": null,
         "customerRatePlan": null,
         "status": {
@@ -826,7 +826,7 @@
             "name": "Offered",
             "nameKey": "offered"
         },
-        "uuid": "04fdd778-023b-415d-aa90-13d32246cefe"
+        "uuid": "01fdd778-023b-415d-aa90-13d32246cefe"
     },
     "visitDetails": null,
     "visitNotes": null,

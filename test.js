@@ -1,9 +1,8 @@
 const fs = require("fs");
-
 // Load JSON data from a file
 const jsonData = require("./apitemplate.json");
 
-// Recursive function to filter out entries containing 'Demo.inc' case-insensitively
+// Recursive function to filter out entries containing 'demo.address' case-insensitively
 function filterEntries(obj) {
 	if (Array.isArray(obj)) {
 		return obj
@@ -12,6 +11,7 @@ function filterEntries(obj) {
 	} else if (obj !== null && typeof obj === "object") {
 		const newObj = {};
 		let hasMatch = false; // Flag to check if any sub-properties match
+
 		for (const key in obj) {
 			const value = obj[key];
 			if (typeof value === "object" || Array.isArray(value)) {
@@ -22,20 +22,23 @@ function filterEntries(obj) {
 				}
 			} else if (
 				typeof value === "string" &&
-				value.toLowerCase().includes("/10000")
+				value.toLowerCase().includes("demo.address")
 			) {
 				newObj[key] = value;
 				hasMatch = true;
 			}
 		}
+
 		return hasMatch ? newObj : null;
 	} else {
 		return null;
 	}
 }
 
-// Filter the data and write to a new file
+// Filter the data
 const filteredData = filterEntries(jsonData);
+
+// Write the filtered data to a new file
 if (filteredData) {
 	fs.writeFile("output.json", JSON.stringify(filteredData, null, 2), (err) => {
 		if (err) {
@@ -45,5 +48,5 @@ if (filteredData) {
 		console.log("Filtered data has been written to output.json");
 	});
 } else {
-	console.log('No data containing "/10000" found.');
+	console.log('No data containing "demo.address" found.');
 }
