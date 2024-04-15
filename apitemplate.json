@@ -253,7 +253,7 @@
     "locked": false,
     "mileage": null,
     "notes": null,
-    "notificationEmail": "corbiv@ehsd.cccounty.us",
+    "notificationEmail": "Customer.email",
     "notify": true,
     "numJobs": 1,
     "numberAcceptedOffers": 0,
@@ -285,7 +285,7 @@
     "preventEdit": null,
     "primaryRef": {
         "id": 5749753,
-        "uri": "https://osi.demo.com:443/api/referenceCode/5749753",
+        "uri": "https://osi.demo.com:443/api/referenceCode/1",
         "description": null,
         "name": "Consumer Names",
         "promote": false,
@@ -584,8 +584,8 @@
             "dependentId": null,
             "description": null,
             "name": "Worker",
-            "ref": "Vronika Corbin",
-            "referenceValue": "Vronika Corbin",
+            "ref": "Requestor.Name",
+            "referenceValue": "Requestor.Name",
             "referenceValueUrl": null,
             "superBooking": {
                 "id": 1107524,
@@ -716,10 +716,10 @@
     "requestedBy": null,
     "requestor": {
         "id": 10000,
-        "uri": "https://osi.demo.com:443/api/requestor/58237",
-        "displayLabel": "Vronika Corbin (925-655-4175)",
-        "displayName": "Vronika Corbin (925-655-4175)",
-        "name": "Vronika Corbin",
+        "uri": "https://osi.demo.com:443/api/requestor/1",
+        "displayLabel": "Requestor.Name Requestor.Phone",
+        "displayName": "Requestor.Name Requestor.Phone",
+        "name": "Requestor.Name",
         "uuid": "e10e43d8-b14f-4e7a-b60b-473f404fe851"
     },
     "requirements": [
