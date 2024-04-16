@@ -1,6 +1,25 @@
 const { faker } = require("@faker-js/faker");
 const originalData = require("./apitemplate.json");
 
+function getRandomUSTimeZone() {
+	const timeZones = [
+		{ name: "America/New_York", displayName: "EDT" },
+		{ name: "America/Chicago", displayName: "CDT" },
+		{ name: "America/Denver", displayName: "MDT" },
+		{ name: "America/Los_Angeles", displayName: "PDT" },
+	];
+	return faker.helpers.arrayElement(timeZones);
+}
+
+function getRandomJobStatus() {
+	const randomNumber = faker.number.int({ min: 1, max: 100 });
+	if (randomNumber <= 20) return "Open";
+	if (randomNumber <= 40) return "Offered";
+	if (randomNumber <= 50) return "Assign";
+	if (randomNumber <= 95) return "Confirm";
+	return "Cancelled";
+}
+
 function generateAPICall(id) {
 	const apiCall = JSON.parse(JSON.stringify(originalData));
 	apiCall.id = id;
@@ -18,42 +37,36 @@ function generateAPICall(id) {
 	const formattedAddress = `${fakeAddress.street}, ${fakeAddress.city}, ${fakeAddress.state} ${fakeAddress.zipCode}`;
 	const fakeCompanyName = faker.company.name();
 
-	console.log(fakeAddress);
-
 	apiCall.actualLocation.addrEntered = formattedAddress;
 	apiCall.actualLocation.displayLabel = `Virtual Session (VRI)\\n${formattedAddress}`;
-	apiCall.actualLocationDisplayLabel = `Virtual Session (VRI)\\n${formattedAddress}`;
-
-	if (apiCall.location) {
-		apiCall.location.addrEntered = formattedAddress;
-		apiCall.location.displayLabel = `Virtual Session (VRI)\\n${formattedAddress}`;
-	}
-
 	apiCall.client.displayName = fakeCompanyName;
 	apiCall.client.name = fakeCompanyName;
-	apiCall.billingCustomer.displayName = fakeCompanyName;
-	apiCall.billingCustomer.name = fakeCompanyName;
-	apiCall.customer.displayName = fakeCompanyName;
-	apiCall.customer.name = fakeCompanyName;
+	apiCall.notificationEmail = faker.internet.email();
 
-	for (let i = 0; i < apiCall.refs.length; i++) {
-		apiCall.refs[i].customer.displayName = fakeCompanyName;
-		apiCall.refs[i].customer.name = fakeCompanyName;
-	}
+	const requestorName = faker.person.fullName();
+	const requestorPhone = faker.phone.number();
+	apiCall.requestor.displayLabel = `${requestorName} ${requestorPhone}`;
+	apiCall.requestor.displayName = `${requestorName} ${requestorPhone}`;
+	apiCall.requestor.name = requestorName;
+
+	apiCall.timeZone = getRandomUSTimeZone().name;
+	apiCall.timeZoneDisplayName = getRandomUSTimeZone().displayName;
+
+	// Generate a random job status and modify the name and nameKey fields
+	const randomJobStatus = getRandomJobStatus();
+	apiCall.visit.status.name = randomJobStatus;
+	apiCall.visit.status.nameKey = randomJobStatus.toLowerCase();
 
 	return apiCall;
 }
 
-const numAPICalls = 1;
+const numAPICalls = 20;
 const startingId = 10001;
-const startDate = new Date("2024-05-01T00:00:00Z");
-const endDate = new Date("2024-05-31T23:59:59Z");
 const generatedAPICalls = [];
 
 for (let i = 0; i < numAPICalls; i++) {
 	const id = startingId + i;
-	const apiCall = generateAPICall(id, startDate, endDate);
-	generatedAPICalls.push(apiCall);
+	generatedAPICalls.push(generateAPICall(id));
 }
 
 console.log(JSON.stringify(generatedAPICalls, null, 2));
