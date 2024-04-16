@@ -11,6 +11,34 @@ function getRandomUSTimeZone() {
 	return faker.helpers.arrayElement(timeZones);
 }
 
+function getRandomDuration() {
+	const randomNumber = faker.number.int({ min: 1, max: 100 });
+	let durationMins;
+
+	if (randomNumber <= 10) {
+		durationMins = 30; // 0.5 hours (30 minutes) - 10% chance
+	} else if (randomNumber <= 35) {
+		durationMins = 60; // 1 hour - 25% chance
+	} else if (randomNumber <= 60) {
+		durationMins = 90; // 1.5 hours - 25% chance
+	} else if (randomNumber <= 75) {
+		durationMins = 120; // 2 hours - 15% chance
+	} else if (randomNumber <= 85) {
+		durationMins = 150; // 2.5 hours - 10% chance
+	} else if (randomNumber <= 90) {
+		durationMins = 180; // 3 hours - 5% chance
+	} else {
+		durationMins = 240; // 4 hours - 10% chance
+	}
+
+	const durationHrs = durationMins / 60;
+
+	return {
+		durationMins,
+		durationHrs,
+	};
+}
+
 function getRandomJobStatus() {
 	const randomNumber = faker.number.int({ min: 1, max: 100 });
 	if (randomNumber <= 20) return "Open";
@@ -36,6 +64,7 @@ function generateAPICall(id) {
 
 	const formattedAddress = `${fakeAddress.street}, ${fakeAddress.city}, ${fakeAddress.state} ${fakeAddress.zipCode}`;
 	const fakeCompanyName = faker.company.name();
+	const { durationMins, durationHrs } = getRandomDuration();
 
 	apiCall.actualLocation.addrEntered = formattedAddress;
 	apiCall.actualLocation.displayLabel = `Virtual Session (VRI)\\n${formattedAddress}`;
@@ -56,6 +85,8 @@ function generateAPICall(id) {
 	const randomJobStatus = getRandomJobStatus();
 	apiCall.visit.status.name = randomJobStatus;
 	apiCall.visit.status.nameKey = randomJobStatus.toLowerCase();
+	apiCall.expectedDurationMins = durationMins;
+	apiCall.expectedDurationHrs = durationHrs;
 
 	return apiCall;
 }
