@@ -1,5 +1,16 @@
 const { faker } = require("@faker-js/faker");
 const originalData = require("./apitemplate.json");
+const dayjs = require("dayjs");
+
+function replaceValues(refs) {
+	for (const ref of refs) {
+		if (ref.name === "3rd Party Video Link") {
+			const generatedLink = generateLink();
+			ref.ref = generatedLink;
+			ref.referenceValue = generatedLink;
+		}
+	}
+}
 
 function getRandomUSTimeZone() {
 	const timeZones = [
@@ -39,6 +50,16 @@ function getRandomDuration() {
 	};
 }
 
+function generateLink() {
+	const randomNumber = faker.number.int({ min: 1, max: 100 });
+	if (randomNumber <= 40) {
+		return "Demo generate link";
+	}
+	if (randomNumber <= 60) {
+		return "Customer will provide link";
+	}
+	return "http://customer.generated.link";
+}
 function getRandomJobStatus() {
 	const randomNumber = faker.number.int({ min: 1, max: 100 });
 	if (randomNumber <= 20) return "Open";
@@ -67,6 +88,9 @@ function generateAPICall(id) {
 	const { durationMins, durationHrs } = getRandomDuration();
 
 	apiCall.actualLocation.addrEntered = formattedAddress;
+	apiCall.location.addrEntered = formattedAddress;
+	apiCall.billingLocation.addrEntered = formattedAddress;
+	apiCall.billingLocation.displayLabel = formattedAddress;
 	apiCall.actualLocation.displayLabel = `Virtual Session (VRI)\\n${formattedAddress}`;
 	apiCall.client.displayName = fakeCompanyName;
 	apiCall.client.name = fakeCompanyName;
@@ -87,11 +111,29 @@ function generateAPICall(id) {
 	apiCall.visit.status.nameKey = randomJobStatus.toLowerCase();
 	apiCall.expectedDurationMins = durationMins;
 	apiCall.expectedDurationHrs = durationHrs;
+	replaceValues(apiCall.refs);
+
+	const startDate = faker.date.between({
+		from: "2024-05-06T00:00:00.000Z",
+		to: "2024-05-10T23:59:59.999Z",
+	});
+	// Set the time between 10 a.m. and 5 p.m.
+	startDate.setUTCHours(faker.number.int({ min: 15, max: 22 }), 0, 0, 0);
+
+	// Format the date in the desired format and time zone
+	const formattedStartDate = startDate.toISOString().replace(".000Z", "Z");
+
+	// Update the expectedStartDate in the apiCall object
+	apiCall.expectedStartDate = formattedStartDate;
+	apiCall.expectedStartTime = formattedStartDate;
+
+	const expectedEndDate = dayjs(formattedStartDate).add(durationMins, "minute");
+	apiCall.expectedEndDate = expectedEndDate.toISOString().replace(".000Z", "Z");
 
 	return apiCall;
 }
 
-const numAPICalls = 20;
+const numAPICalls = 100;
 const startingId = 10001;
 const generatedAPICalls = [];
 
