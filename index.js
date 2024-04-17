@@ -1,6 +1,8 @@
 const { faker } = require("@faker-js/faker");
 const originalData = require("./apitemplate.json");
 const dayjs = require("dayjs");
+const fs = require("node:fs");
+const path = require("node:path");
 
 function replaceValues(refs) {
 	for (const ref of refs) {
@@ -133,13 +135,24 @@ function generateAPICall(id) {
 	return apiCall;
 }
 
-const numAPICalls = 100;
+const numAPICalls = 2;
 const startingId = 10001;
 const generatedAPICalls = [];
 
-for (let i = 0; i < numAPICalls; i++) {
-	const id = startingId + i;
-	generatedAPICalls.push(generateAPICall(id));
+const fakeDataDir = path.join(process.cwd(), "fakeData");
+if (!fs.existsSync(fakeDataDir)) {
+	fs.mkdirSync(fakeDataDir);
 }
 
-console.log(JSON.stringify(generatedAPICalls, null, 2));
+for (let i = 0; i < numAPICalls; i++) {
+	const id = startingId + i;
+	const apiCall = generateAPICall(id);
+
+	// Write each job's data to a separate JSON file
+	const jsonData = JSON.stringify(apiCall, null, 2);
+	const fileName = `${id}.json`;
+	const filePath = path.join(fakeDataDir, fileName);
+	fs.writeFileSync(filePath, jsonData);
+
+	console.log(`Generated data written to ${filePath}`);
+}
