@@ -116,8 +116,8 @@ function generateAPICall(id) {
 	replaceValues(apiCall.refs);
 
 	const startDate = faker.date.between({
-		from: "2024-05-06T00:00:00.000Z",
-		to: "2024-05-10T23:59:59.999Z",
+		from: "2024-07-22T00:00:00.000Z",
+		to: "2024-07-26T23:59:59.999Z",
 	});
 	// Set the time between 10 a.m. and 5 p.m.
 	startDate.setUTCHours(faker.number.int({ min: 15, max: 22 }), 0, 0, 0);
@@ -135,8 +135,8 @@ function generateAPICall(id) {
 	return apiCall;
 }
 
-const numAPICalls = 2;
-const startingId = 10001;
+const numAPICalls = 300;
+const startingId = 10201;
 const generatedAPICalls = [];
 
 const fakeDataDir = path.join(process.cwd(), "fakeData");
